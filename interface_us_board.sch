@@ -6753,7 +6753,7 @@ Based on the following sources:
 <part name="SV2" library="con-ml" deviceset="ML10" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="M1206" value="100"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="M1206" value="47"/>
 <part name="IC1" library="74xx-eu" deviceset="74*245" device="DW" technology="AC"/>
 <part name="IC2" library="40xx" deviceset="4050" device="D"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
