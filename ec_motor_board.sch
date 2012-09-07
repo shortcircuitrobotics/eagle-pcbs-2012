@@ -13723,6 +13723,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="R1206"/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
+<part name="R13" library="resistor" deviceset="R-EU_" device="R1206" value="0"/>
+<part name="P+8" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13750,7 +13752,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="D1" gate="G$1" x="-38.1" y="30.48" rot="R180"/>
 <instance part="D2" gate="G$1" x="-27.94" y="30.48" rot="R180"/>
 <instance part="R6" gate="G$1" x="-55.88" y="-12.7" rot="R90"/>
-<instance part="R7" gate="G$1" x="-68.58" y="-7.62"/>
+<instance part="R7" gate="G$1" x="-63.5" y="-7.62"/>
 <instance part="R8" gate="G$1" x="33.02" y="-12.7"/>
 <instance part="R9" gate="G$1" x="33.02" y="-10.16"/>
 <instance part="ROW2" gate="A" x="-99.06" y="2.54" rot="MR0"/>
@@ -13770,6 +13772,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="P+6" gate="VCC" x="33.02" y="10.16" rot="R270"/>
 <instance part="R12" gate="G$1" x="33.02" y="-7.62" rot="R180"/>
 <instance part="P+7" gate="VCC" x="43.18" y="-7.62" rot="R270"/>
+<instance part="R13" gate="G$1" x="-73.66" y="-12.7" rot="R90"/>
+<instance part="P+8" gate="VCC" x="-73.66" y="-22.86" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -13944,7 +13948,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="-50.8" y="-7.62"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <junction x="-55.88" y="-7.62"/>
-<wire x1="-55.88" y1="-7.62" x2="-63.5" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-7.62" x2="-58.42" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -14056,10 +14060,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-68.58" y1="-7.62" x2="-73.66" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="-7.62" x2="-76.2" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="-7.62" x2="-76.2" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="ROW2" gate="A" pin="8"/>
 <wire x1="-76.2" y1="-5.08" x2="-96.52" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<junction x="-73.66" y="-7.62"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -14148,6 +14155,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 <wire x1="40.64" y1="-7.62" x2="38.1" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+<wire x1="-73.66" y1="-20.32" x2="-73.66" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
