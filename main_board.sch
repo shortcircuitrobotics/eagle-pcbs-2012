@@ -18811,7 +18811,7 @@ Based on the following source:
 <label x="27.94" y="-96.52" size="1.016" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="MUX1-EN" class="0">
+<net name="MUX1-INH" class="0">
 <segment>
 <wire x1="144.78" y1="25.4" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
 <label x="149.86" y="25.4" size="1.27" layer="95" xref="yes"/>
@@ -18828,11 +18828,6 @@ Based on the following source:
 <wire x1="144.78" y1="22.86" x2="149.86" y2="22.86" width="0.1524" layer="91"/>
 <label x="149.86" y="22.86" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC11" gate="1" pin="PD7(AIN1/PCINT23)"/>
-</segment>
-<segment>
-<pinref part="IC8" gate="A" pin="INH"/>
-<wire x1="50.8" y1="-132.08" x2="27.94" y2="-132.08" width="0.1524" layer="91"/>
-<label x="27.94" y="-132.08" size="1.016" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_RST" class="0">
@@ -21088,6 +21083,13 @@ Based on the following source:
 <pinref part="IC5" gate="G$1" pin="PCINT4/ADC4_PA4"/>
 <wire x1="340.36" y1="223.52" x2="345.44" y2="223.52" width="0.1524" layer="91"/>
 <label x="345.44" y="223.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MUX2-INH" class="0">
+<segment>
+<pinref part="IC8" gate="A" pin="INH"/>
+<wire x1="50.8" y1="-132.08" x2="27.94" y2="-132.08" width="0.1524" layer="91"/>
+<label x="27.94" y="-132.08" size="1.016" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 </nets>
