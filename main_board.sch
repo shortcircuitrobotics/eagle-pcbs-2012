@@ -17058,7 +17058,7 @@ Based on the following source:
 <part name="J1" library="con-molex" deviceset="22-?-04" device="27-2041"/>
 <part name="P+44" library="supply1" deviceset="VCC" device=""/>
 <part name="GND76" library="supply1" deviceset="GND" device=""/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="GND_A" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="GND_B" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="GND_C" library="pinhead" deviceset="PINHD-1X1" device=""/>
@@ -17443,7 +17443,7 @@ Based on the following source:
 <instance part="J1" gate="-4" x="325.12" y="60.96"/>
 <instance part="P+44" gate="VCC" x="307.34" y="66.04" rot="R90"/>
 <instance part="GND76" gate="1" x="314.96" y="60.96" rot="R270"/>
-<instance part="JP4" gate="G$1" x="373.38" y="218.44"/>
+<instance part="JP4" gate="G$1" x="373.38" y="220.98"/>
 <instance part="GND_A" gate="G$1" x="281.94" y="81.28"/>
 <instance part="GND_B" gate="G$1" x="281.94" y="73.66"/>
 <instance part="GND_C" gate="G$1" x="281.94" y="66.04"/>
@@ -19167,9 +19167,9 @@ Based on the following source:
 <label x="571.5" y="215.9" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="G$1" pin="XTAL2"/>
-<wire x1="279.4" y1="205.74" x2="266.7" y2="205.74" width="0.1524" layer="91"/>
-<label x="266.7" y="205.74" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<pinref part="IC5" gate="G$1" pin="PCINT6/ADC6_PA6"/>
+<wire x1="340.36" y1="218.44" x2="345.44" y2="218.44" width="0.1524" layer="91"/>
+<label x="345.44" y="218.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LB_PWM" class="0">
@@ -20652,13 +20652,6 @@ Based on the following source:
 <pinref part="IC5" gate="G$1" pin="PCINT5/ADC5_PA5"/>
 <wire x1="340.36" y1="220.98" x2="370.84" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$110" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="PCINT6/ADC6_PA6"/>
-<wire x1="340.36" y1="218.44" x2="370.84" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MB_DIAG" class="0">

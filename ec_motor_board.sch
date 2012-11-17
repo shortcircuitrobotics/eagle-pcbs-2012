@@ -14055,6 +14055,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="-43.18" y1="45.72" x2="-38.1" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-43.18" y="38.1"/>
+<junction x="-43.18" y="30.48"/>
 </segment>
 </net>
 <net name="N$14" class="0">
